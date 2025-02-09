@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="countdown_time_1.css">
+    <title>bấm giờ</title>
+</head>
+<body>
+    <div id="startSection">
+        <h1 class="h1">bấm giờ !</h1>
+        <input type="number" id="minutesInput" placeholder="Enter minutes" min="0">
+        <button class="button_time" id="startButton">Start</button>
+    </div>
+
+    <div id="timerSection">
+        <div id="timeDisplay">00:00:00</div>
+        <button class="button_time" id="pauseButton">Pause</button>
+        <button class="button_time" id="resetButton">Reset</button>
+    </div>
+
+    <div class="alarm"><h3 style="text-decoration: underline; justify-self: left;">lưu ý:</h3></div>
+    <div class="alarm">-cái này nó sẽ tính giờ riêng lẻ theo từng app nếu mà nó nhiều app "bấm giờ" cùng xuất hiện thì sẽ có nhiều đồng hồ kêu liên tục</br>-nhớ xóa mỗi lần bạn muốn reset thời gian</div>
+    <p>-nhớ để cái bấm giờ đồng bộ với cái khung extension là được</p>
+    <p>-cái bấm giờ này hơi lỗi nên sài thông cảm xíu nha</p>
+    <audio id="alarmSound" src="sound/nokia_alarm.mp3"></audio>
+    <audio id="warningSound" src="sound/nokia_alarm.mp3"></audio>
+
+    <script src="countdown_time_1.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  initial-scale=1.0, maximum-scale=1.0, user-scalable="no" >
+    <title>Cài đặt kích thước nội dung</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="countdown_time.css">
+</head>
+
+<body>
+    <div class="button-row">
+        <button data-content="content1" class="active">to do list </button>
+        <button data-content="content2">time alarm </button>
+        <button data-content="content3">optionally</button>
+    </div>
+
+    <div id="content1" class="content active">
+        <div class="left-aligned-div-button">
+            <input type="text" id="taskInput" placeholder="Enter a task...">
+            <button class="button-plus" id="addTaskBtn"> addTask </button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <div id="content2" class="content" >
+        <div id="startSection">
+            <h1 class="h1">bấm giờ !</h1>
+            <button class="button_time" id="startButton">enter</button>
+        </div>
+    
+        <audio id="alarmSound" src="sound/nokia_alarm.mp3"></audio>
+        <audio id="warningSound" src="sound/nokia_alarm.mp3"></audio>
+    </div>
+
+    <div id="content3" class="content" >
+        
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="countdown_time.js"></script>
+</body>
+</html>

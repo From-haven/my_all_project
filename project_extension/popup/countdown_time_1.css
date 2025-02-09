@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#inputSection, #timerSection {
+    display: none;
+}
+#timerSection {
+    margin-top: 20px;
+}
+#timeDisplay {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+button_time {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.h1 {
+    font-size: large;
+    color: rgb(58, 8, 4);
+    justify-self: left;
+    
+}
+
+.alarm{
+    justify-content: left;
+    justify-items: left;
+    justify-self: left;
+    text-justify: left;
+}

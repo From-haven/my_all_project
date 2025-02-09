@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "todoist advanced",
+  "description": "for todoist and something",
+  "version": "1.0.0",
+  "action": {
+      "default_popup": "popup/interface.html",
+      "default_icon": "icon/book.png"
+  },
+  "permissions": [
+    "storage", 
+    "tabs", 
+    "notifications",
+    "activeTab",
+    "alarms"
+  ],
+  "background" : {
+    "service_worker": "background.js"
+  },
+  "content_scripts" : [
+    {
+      "js" : ["scripts/content.js"],
+      "matches" : [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "icons" : {
+    "16" : "icon/book.png",
+    "32" : "images/icon-32.png",
+    "48" : "images/icon-48.png",
+    "128" : "icon/book.png"
+  }
+}
